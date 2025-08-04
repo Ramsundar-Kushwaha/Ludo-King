@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Ludo</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="ludo_frame">
+
+      <div class="box">
+        <div class="house bg1">
+          <div class="house_box">
+            <div class="hb_box">
+              <div class="hb_steps house1">🤩</div>
+              <div class="hb_steps house1">🤩</div>
+            </div>
+            <div class="hb_box">
+              <div class="hb_steps house1">🤩</div>
+              <div class="hb_steps house1">🤩</div>
+            </div>
+          </div>
+        </div>
+        <div class="path" id="y">
+          <div class="y_path">
+            <div class="steps_y"><div id="s12"></div></div>
+            <div class="steps_y"><div id="s11"></div></div>
+            <div class="steps_y"><div id="s10"></div></div>
+            <div class="steps_y"><div id="s9"></div></div>
+            <div class="steps_y"><div id="s8"></div></div>
+            <div class="steps_y"><div id="s7"></div></div>
+          </div>
+
+          <div id="y1_home_path">
+            <div class="steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px; background-color: white; width: 80%;" id="s13"></div>
+            <div class="home_steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: yellow; box-shadow: 1px 1px 5px;"></div>
+          </div>
+
+          <div class="y_path">
+            <div class="steps_y"><div id="s14"></div></div>
+            <div class="steps_y" style="background-color: rgb(208, 151, 17);"><div id="s15"></div></div>
+            <div class="steps_y"><div id="s16"></div></div>
+            <div class="steps_y"><div id="s17"></div></div>
+            <div class="steps_y"><div id="s18"></div></div>
+            <div class="steps_y"><div id="s19"></div></div>
+          </div>
+        </div>
+        <div class="house bg2">
+          <div class="house_box">
+            <div class="hb_box">
+              <div class="hb_steps house2">🤑</div>
+              <div class="hb_steps house2">🤑</div>
+            </div>
+            <div class="hb_box">
+              <div class="hb_steps house2">🤑</div>
+              <div class="hb_steps house2">🤑</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="home_box">
+        <div class="home_path">
+          <div class="x_path">
+            <div class="steps_x"><div id="s1"></div></div>
+            <div class="steps_x" style="background-color: rgb(23, 113, 23);"><div id="s2"></div></div>
+            <div class="steps_x"><div id="s3"></div></div>
+            <div class="steps_x"><div id="s4"></div></div>
+            <div class="steps_x"><div id="s5"></div></div>
+            <div class="steps_x"><div id="s6"></div></div>
+          </div>
+
+          <div id="x2_home_path">
+            <div class="steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px; background-color: white; height: 80%;" id="52"></div>
+            <div class="home_steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightgreen; box-shadow: 1px 1px 5px;"></div>
+          </div>
+
+          <div class="x_path">
+            <div class="steps_x"><div id="s51"></div></div>
+            <div class="steps_x"><div id="s50"></div></div>
+            <div class="steps_x"><div id="s49"></div></div>
+            <div class="steps_x"><div id="s48"></div></div>
+            <div class="steps_x"><div id="s47"></div></div>
+            <div class="steps_x"><div id="s46"></div></div>
+          </div>
+        </div>
+
+        <div id="home"></div><!--home-->
+
+        <div class="home_path">
+          <div class="x_path">
+            <div class="steps_x"><div id="s20"></div></div>
+            <div class="steps_x"><div id="s21"></div></div>
+            <div class="steps_x"><div id="s22"></div></div>
+            <div class="steps_x"><div id="s23"></div></div>
+            <div class="steps_x"><div id="s24"></div></div>
+            <div class="steps_x"><div id="s25"></div></div>
+          </div>
+
+          <div id="x1_home_path">
+            <div class="home_steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px;"></div>
+            <div class="steps_x" style="border-color: lightblue; box-shadow: 1px 1px 5px; background-color: white; height: 80%;" id="26"></div>
+          </div>
+
+          <div class="x_path">
+            <div class="steps_x"><div id="s32"></div></div>
+            <div class="steps_x"><div id="s31"></div></div>
+            <div class="steps_x"><div id="s30"></div></div>
+            <div class="steps_x"><div id="s29"></div></div>
+            <div class="steps_x" style="background-color: rgb(56, 56, 163);"><div id="s28"></div></div>
+            <div class="steps_x"><div id="s27"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="house bg3">
+          <div class="house_box">
+            <div class="hb_box">
+              <div class="hb_steps house3">😎</div>
+              <div class="hb_steps house3">😎</div>
+            </div>
+            <div class="hb_box">
+              <div class="hb_steps house3">😎</div>
+              <div class="hb_steps house3">😎</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="path" id="y">
+          <div class="y_path">
+            <div class="steps_y"><div id="s45"></div></div>
+            <div class="steps_y"><div id="s44"></div></div>
+            <div class="steps_y"><div id="s43"></div></div>
+            <div class="steps_y"><div id="s42"></div></div>
+            <div class="steps_y" style="background-color: rgb(182, 28, 28);"><div id="s41"></div></div>
+            <div class="steps_y"><div id="s40"></div></div>
+          </div>
+          <div id="y2_home_path">
+            <div class="home_steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px;"></div>
+            <div class="home_steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px;"></div>
+            <div class="steps_y" style="border-color: lightcoral; box-shadow: 1px 1px 5px; background-color: white; width: 80%;" id="39"></div>
+          </div>
+          <div class="y_path">
+            <div class="steps_y"><div id="s33"></div></div>
+            <div class="steps_y"><div id="s34"></div></div>
+            <div class="steps_y"><div id="s35"></div></div>
+            <div class="steps_y"><div id="s36"></div></div>
+            <div class="steps_y"><div id="s37"></div></div>
+            <div class="steps_y"><div id="s38"></div></div>
+          </div>
+        </div>
+
+        <div class="house bg4">
+          <div class="house_box">
+            <div class="hb_box">
+              <div class="hb_steps house4">😍</div>
+              <div class="hb_steps house4">😍</div>
+            </div>
+            <div class="hb_box">
+              <div class="hb_steps house4">😍</div>
+              <div class="hb_steps house4">😍</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="Script.js"></script>
+</body>
+</html>

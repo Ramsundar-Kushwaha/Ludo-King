@@ -1,0 +1,445 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: rgb(151, 255, 255);
+}
+
+@media(min-width:600px) and (max-width:2400px){
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ludo_frame{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+  }
+  .box{
+    width: 100%;
+    height: 38%;
+    background-color: white;
+    display: flex;
+  }
+  .home_box{
+    width: 100%;
+    height: 24%;
+    background-color: white;
+    display: flex;
+  }
+  .house{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 3px;
+  }
+  .path{
+    width: 24%;
+    height: 100%;
+    /* background-color: white; */
+  }
+  .home_path{
+    width: 38%;
+    height: 100%;
+    /* background-color: black; */
+  
+  }
+  .house1{
+    background-color: rgb(23, 113, 23);
+  }
+  .bg1{
+    background-color: rgb(23, 113, 23);
+  }
+  .house2{
+    background-color: rgb(208, 151, 17);
+  }
+  .bg2{
+    background-color: rgb(208, 151, 17);
+  }
+  .house3{
+    background-color: rgb(182, 28, 28);
+  }
+  .bg3{
+    background-color: rgb(182, 28, 28);
+  }
+  .house4{
+    background-color: rgb(56, 56, 163);
+  }
+  .bg4{
+    background-color: rgb(56, 56, 163);
+  }
+  #y{
+    display: flex;
+  }
+  #x{
+    display: flex;
+    flex-direction: column;
+  }
+  .y_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aquamarine; */
+  }
+  #y1_home_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(208, 151, 17);
+  }
+  #y2_home_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(182, 28, 28);
+  }
+  .x_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    /* background-color: aquamarine; */
+  }
+  #x1_home_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(56, 56, 163);
+  }
+  #x2_home_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(23, 113, 23);
+  }
+  #home{
+    border-radius: 0.5rem;
+    width: 25%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/1200x630wa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 3px 5px;
+  }
+  .steps_x{
+    width: 15%;
+    height: 70%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px;
+    cursor:pointer;
+  }
+  .home_steps_x{
+    width: 15%;
+    height: 70%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    cursor:pointer;
+  }
+  .steps_y{
+    width: 70%;
+    height: 15%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 30px;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px;
+    cursor:pointer;
+  }
+  .steps_x > div,
+  .steps_y > div {
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    transform: translate(var(--offset-x, 0px), var(--offset-y, 0px));
+    z-index: var(--z, 0);
+    font-size: 30px;
+  }
+
+  .home_steps_y{
+    width: 70%;
+    height: 15%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    cursor:pointer;
+  }
+  .house_box{
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.5rem;
+  }
+  .hb_box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .hb_steps{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 1px 2px 3px;
+    cursor: pointer;
+  }
+}
+
+/*for mobile device*/
+
+@media(min-width:300px) and (max-width:599px){
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ludo_frame{
+    width: 95vw;
+    height: 95vw;
+    border: 1px solid black;
+  }
+  .box{
+    width: 100%;
+    height: 38%;
+    background-color: white;
+    display: flex;
+  }
+  .home_box{
+    width: 100%;
+    height: 24%;
+    background-color: white;
+    display: flex;
+  }
+  .house{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 3px;
+  }
+  .path{
+    width: 24%;
+    height: 100%;
+  }
+  .home_path{
+    width: 38%;
+    height: 100%;
+  
+  }
+  .house1{
+    background-color: rgb(23, 113, 23);
+  }
+  .bg1{
+    background-color: rgb(23, 113, 23);
+  }
+  .house2{
+    background-color: rgb(208, 151, 17);
+  }
+  .bg2{
+    background-color: rgb(208, 151, 17);
+  }
+  .house3{
+    background-color: rgb(182, 28, 28);
+  }
+  .bg3{
+    background-color: rgb(182, 28, 28);
+  }
+  .house4{
+    background-color: rgb(56, 56, 163);
+  }
+  .bg4{
+    background-color: rgb(56, 56, 163);
+  }
+  #y{
+    display: flex;
+  }
+  #x{
+    display: flex;
+    flex-direction: column;
+  }
+  .y_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #y1_home_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(208, 151, 17);
+  }
+  #y2_home_path{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(182, 28, 28);
+  }
+  .x_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+  }
+  #x1_home_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(56, 56, 163);
+  }
+  #x2_home_path{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(23, 113, 23);
+  }
+  #home{
+    border-radius: 0.5rem;
+    width: 25%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/1200x630wa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 3px 5px;
+  }
+  .steps_x{
+    width: 15%;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px;
+    cursor: pointer;
+  }
+  .home_steps_x{
+    width: 15%;
+    height: 70%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .steps_y{
+    width: 70%;
+    height: 15%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px;
+    cursor: pointer;
+  }
+  .steps_x > div,
+  .steps_y > div {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    transform: translate(var(--offset-x, 0px), var(--offset-y, 0px));
+    z-index: var(--z, 0);
+    font-size: 20px;
+  }
+  
+  .home_steps_y{
+    width: 70%;
+    height: 15%;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .house_box{
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    margin: auto;
+    border-radius: 0.5rem;
+  }
+  .hb_box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hb_steps{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 1px 2px 3px;
+    cursor: pointer;
+  }
+}
